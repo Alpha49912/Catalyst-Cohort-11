@@ -1,0 +1,70 @@
+body {
+    font-family: 'lato' Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+#header {
+    text-align: center;
+    font-size: xx-large;
+    color: #fff;
+    padding-top: 10px;
+}
+
+#header_caption {
+    text-align: center;
+    font-size: 17px;
+    color: #B3B3B3;
+    padding-bottom: 5px;
+    background-color: #08083B;
+    padding-top: 5px;
+    font-style: italic;
+}
+
+#header_content {
+    Background-color: #FC0F14;
+
+}
+
+
+#footer_content {
+    font-style: italic;
+    color: #B3B3B3
+}
+
+form {
+    display: table;
+    padding: 10px;
+    margin-left: 350px;
+
+}
+
+form textarea {
+    width: 500px;
+    height: 200px;
+}
+
+div.tableRow {
+    display: table-row;
+}
+
+div.tableRow label {
+    display: table-cell;
+    vertical-align: top;
+    padding: 3px;
+}
+
+div.tableRow label:first-child {
+    padding: 5px;
+    text-align: right;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+option {
+    font-size: 14px;
+    border-radius: 7px;
+}

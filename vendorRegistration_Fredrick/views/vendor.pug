@@ -1,0 +1,48 @@
+extends layout 
+block content     
+    header.card-header
+        h4.card-title VENDOR REGISTRATION PORTAL
+        p.card-content Fill out the registration form below to create new vendor
+    form.card-header(action="." method="POST") 
+        .form-row 
+            .col.form-group
+                label(for="firstname") First Name: 
+                input.form-control#firstname(type="text" name="firstname")
+            .col.form-group
+                label(for="secondname") Last Name: 
+                input.form-control(type="text" name="lastname")
+        .form-row 
+            .col.form-group
+                label(for="maritalstatus") Age: 
+                input.form-control#firstname(type="text" name="maritalstatus")
+            .col.form-group
+                label(for="address") Date of Registration: 
+                input.form-control(type="date" name="address")     
+        .form-row 
+            .col.form-group
+                label(for="gender") Gender 
+                div 
+                    label.form-check.form-check-inline
+                    input.form-check-input(type="radio" name="gender" value="female")
+                    span.form-check-label Female
+                    label.form-check.form-check-inline
+                    input.form-check-input(type="radio" name="gender" value="male") 
+                    span.form-check-label Male        
+            .col.form-group
+                label(for="nin") NIN Number: 
+                input.form-control(type="text" name="nin")  
+        .form-row 
+            .col.form-group
+                label(for="role") Vender Category
+                select.form-control(type="text" name="role")
+                    option(value="agent")  Select Category 
+                    option(value="director")  Cloth and Shoes 
+                    option(value="manager") Perishable foods
+                    option(value="director")  Phones and Accessories 
+                    option(value="manager") Transport
+            .col.form-group 
+                label(for='phone') Contact: 
+                input.form-control(type="text" name="contact")
+        .form-row 
+            .col.form-group
+                button.submit.btn.btn-primary.btn-block Submit           
